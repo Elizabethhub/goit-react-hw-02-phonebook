@@ -13,7 +13,7 @@ const Filter = ({ handleInputChange }) => {
   );
 };
 
-// Filter.propTypes = {
-//   handleInputChange: PropTypes.func.isRequired,
-// };
+Filter.propTypes = {
+  handleInputChange: PropTypes.func,
+};
 export default Filter;

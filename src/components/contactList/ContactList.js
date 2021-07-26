@@ -4,13 +4,13 @@ import ContactListItem from "./contactListItem/ContactListItem";
 
 const ContactList = ({ contacts, filter, onDeleteContact }) => {
   return (
-    <ul>
+    <ol>
       {contacts
         .filter((contact) => contact.name.toLowerCase().includes(filter.toLowerCase()))
         .map((contact) => (
           <ContactListItem key={contact.id} {...contact} onDeleteContact={onDeleteContact} />
         ))}
-    </ul>
+    </ol>
   );
 };
 
