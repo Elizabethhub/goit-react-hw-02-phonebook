@@ -25,7 +25,7 @@ class ContactForm extends Component {
       return alert(`${this.state.name} is already exists in the Phonebook`);
     }
 
-    this.props.addContact(this.state);
+    this.props.addContact(contact);
     this.setState({ name: "", number: "" });
   };
 

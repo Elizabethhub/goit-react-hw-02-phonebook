@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContactFormStyled = styled.div`
   padding: 25px 15px;
   margin: 10px;
-  border: 2px solid;
+  border: 1px solid;
+  border-radius: 5px;
   width: 400px;
   .inputName {
     margin-top: 10px;
