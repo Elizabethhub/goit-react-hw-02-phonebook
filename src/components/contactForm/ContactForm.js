@@ -20,7 +20,9 @@ class ContactForm extends Component {
       number: this.state.number,
     };
 
-    const sameContact = this.props.contacts.find((contact) => contact.name === this.state.name);
+    const sameContact = this.props.contacts.find(
+      (contact) => contact.name.toLowerCase() === this.state.name.toLowerCase()
+    );
     if (sameContact) {
       return alert(`${this.state.name} is already exists in the Phonebook`);
     }
