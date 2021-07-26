@@ -7,6 +7,12 @@ import Section from "../section/Section";
 class Main extends Component {
   state = { contacts: [], filter: "" };
 
+  handleInputChange = (event) => {
+    console.log(event.currentTarget.value);
+    const { name, value } = event.currentTarget;
+    this.setState({ [name]: value });
+  };
+
   addContact = (contact) => {
     this.setState((prev) => ({ contacts: [...prev.contacts, contact] }));
   };
